@@ -78,6 +78,7 @@ rc-update add dropbear default
 rc-update add rmtfs default
 rc-update add modemmanager default
 rc-update add networkmanager default
+rc-update add chronyd default
 "
 echo 'user ALL=(ALL:ALL) NOPASSWD: ALL' > ${CHROOT}/etc/sudoers.d/user
 
@@ -110,7 +111,7 @@ cp configs/extlinux.conf ${CHROOT}/boot/extlinux
 cp dtbs/* ${CHROOT}/boot/dtbs/qcom
 
 # update fstab
-echo "/dev/mmcblk0p14\t/boot\text2\tdefaults\t0 2" > ${CHROOT}/etc/fstab
+echo "/dev/mmcblk0p13\t/boot\text2\tdefaults\t0 2" > ${CHROOT}/etc/fstab
 
 # copy gadget-tool templates
 cp -a configs/templates ${CHROOT}/etc/gt
