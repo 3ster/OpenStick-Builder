@@ -3,7 +3,7 @@
 export CHROOT=${CHROOT=$(pwd)/rootfs}
 export HOST_NAME=${HOST_NAME=openstick-alpine}
 export RELEASE=${RELEASE=edge}
-export PMOS_RELEASE=${PMOS_RELEASE=v24.06}
+export PMOS_RELEASE=${PMOS_RELEASE=master}
 export MIRROR=${MIRROR=http://dl-cdn.alpinelinux.org/alpine}
 export PMOS_MIRROR=${PMOS_MIRROR=http://mirror.postmarketos.org/postmarketos}
 
